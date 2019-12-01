@@ -1,5 +1,5 @@
 # PromtLog
-PromtLog is library for simple and fast logging, fast to codding and fast to running yours applications. 
+PromtLog is a library for simple and fast logging, fast to codding and fast to running yours applications. 
 It is just my home project.
 
 I would make fast, crossplatform library.
