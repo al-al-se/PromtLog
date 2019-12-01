@@ -1,0 +1,28 @@
+/*
+   Copyright 2019 Alekseev Aleksandr al.al.se@yandex.ru
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/
+
+#pragma once
+
+#include "logger_locator.h"
+
+namespace promt_log
+{
+	inline base_logger& error() { return logger_locator::app() << log_level::LL_ERROR; }
+	inline base_logger& info() { return logger_locator::app() << log_level::LL_IMPORTANT_INFO; }
+	inline base_logger& warning() { return logger_locator::app() << log_level::LL_WARNING; }
+	inline base_logger& debug() { return logger_locator::app() << log_level::LL_DEBUG; }
+	inline base_logger& trace() { return logger_locator::app() << log_level::LL_TRACE; }
+};
